@@ -1,0 +1,1 @@
+openssl req -new -newkey rsa:4096 -days 3650 -nodes -x509 -subj "/L=TPHCM/O=EasyBeauty/CN=157.245.49.108" -keyout ssl.key -out ./ssl.crt

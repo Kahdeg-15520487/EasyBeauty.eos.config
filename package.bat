@@ -1,0 +1,1 @@
+7z a -tzip config.zip firstrun.sh start.sh stop.sh config.ini pk1.txt pk2.txt ssl.cert ssl.key
