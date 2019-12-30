@@ -2,3 +2,8 @@ data-dir/
 nodeos.log
 config.zip
 pw.txt
+store-data/
+EasyBeauty.eos.interface/
+*.txt
+*.crt
+*.key

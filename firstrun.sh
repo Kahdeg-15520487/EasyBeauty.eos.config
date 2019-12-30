@@ -1,3 +1,5 @@
+rm -rf ~/eosio-wallet/default.wallet
+
 cleos wallet create --file pw.txt
 
 cleos wallet open
@@ -16,6 +18,8 @@ sleep 5s
 cleos -u http://localhost:9999 create account eosio "store.data" EOS7XH9Dko3roLPUbu83pfZcQQANFkCULHrMf6d8CiSHYwUjQhM4n -p eosio@active
 
 cleos -u http://localhost:9999 set contract store.data ./store-data -p store.data@active
+
+sleep 5s
 
 kill $(ps -ef | grep keosd | awk '{print $2}' | head -1)
 nodeospid=$(ps -ef | grep nodeos | awk '{print $2}' | head -1)
